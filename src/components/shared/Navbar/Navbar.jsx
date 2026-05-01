@@ -2,6 +2,7 @@ import React from "react";
 import Navlinks from "./Navlinks";
 import Link from "next/link";
 import Image from "next/image";
+import { FaRegUser } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -43,7 +44,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <Link href="/login" className="btn btn-neutral">
-          Login
+          <FaRegUser /> Login
         </Link>
       </div>
     </div>
