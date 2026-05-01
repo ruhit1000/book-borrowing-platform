@@ -2,7 +2,8 @@ import React from "react";
 import Navlinks from "./Navlinks";
 import Link from "next/link";
 import Image from "next/image";
-import { FaRegUser } from "react-icons/fa";
+import ActionButtons from "./ActionButtons";
+import Greetings from "./Greetings";
 
 const Navbar = () => {
   return (
@@ -28,9 +29,12 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
             <Navlinks />
+            <div className="flex justify-center items-center mt-4">
+              <ActionButtons />
+            </div>
           </ul>
         </div>
         <Link href="/">
@@ -49,9 +53,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link href="/login" className="btn btn-neutral">
-          <FaRegUser /> Login
-        </Link>
+        <Greetings />
+        <div className="hidden lg:block">
+          <ActionButtons />
+        </div>
       </div>
     </div>
   );

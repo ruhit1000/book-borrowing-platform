@@ -16,7 +16,7 @@ const Category = () => {
           <Link
             href={`/categories/${category.toLowerCase()}`}
             key={index}
-            className="border-2 border-base-300 rounded-2xl py-8 min-w-xs"
+            className="border-2 border-base-300 rounded-2xl py-8 w-full"
           >
             <h4 className="text-xl font-semibold">{category}</h4>
             <p className="text-sm opacity-70">{allBooks.filter((book) => book.category === category).length} books</p>
