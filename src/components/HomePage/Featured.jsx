@@ -1,7 +1,7 @@
 import React from "react";
 import booksData from "@/data/booksData.json";
 import Image from "next/image";
-import FeatureCard from "../ui/FeatureCard";
+import BookCard from "../ui/BookCard";
 
 const Featured = () => {
   const featuredBooks = booksData.filter((item) => item.featured === true);
@@ -15,7 +15,7 @@ const Featured = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 place-items-center">
         {
             featuredBooks.map((book) => (
-                <FeatureCard key={book.id} book={book} />
+                <BookCard key={book.id} book={book}/>
             ))
         }
       </div>

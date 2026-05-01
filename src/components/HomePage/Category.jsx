@@ -11,12 +11,12 @@ const Category = () => {
       <p>
         Explore our wide range of book categories and find your next great read!
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 my-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 my-8 place-items-center">
         {allCategories.map((category, index) => (
           <Link
             href={`/categories/${category.toLowerCase()}`}
             key={index}
-            className="border-2 border-base-300 rounded-2xl py-8 max-w-xs"
+            className="border-2 border-base-300 rounded-2xl py-8 min-w-xs"
           >
             <h4 className="text-xl font-semibold">{category}</h4>
             <p className="text-sm opacity-70">{allBooks.filter((book) => book.category === category).length} books</p>

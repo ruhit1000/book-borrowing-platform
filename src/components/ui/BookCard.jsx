@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 import BorrowButton from "./BorrowButton";
 import ViewDetailsButton from "./ViewDetailsButton";
 
-const FeatureCard = ({ book }) => {
+const BookCard = ({ book }) => {
   return (
     <div className="shadow rounded-lg group h-full flex flex-col">
       <div className="overflow-hidden rounded-t-lg">
@@ -29,11 +29,11 @@ const FeatureCard = ({ book }) => {
         </div>
         <div className="mt-6 flex gap-2">
           <BorrowButton />
-          <ViewDetailsButton />
+          <ViewDetailsButton book={book} />
         </div>
       </div>
     </div>
   );
 };
 
-export default FeatureCard;
+export default BookCard;

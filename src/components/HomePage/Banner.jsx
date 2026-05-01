@@ -9,10 +9,9 @@ const Banner = () => {
     >
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative z-10 text-center space-y-3 text-base-100 px-4">
-        <h1 className="text-3xl lg:text-5xl font-bold">Read More, Spend Less</h1>
+        <h1 className="text-3xl lg:text-5xl font-bold">Find Your Next Read</h1>
         <h3 className="text-lg lg:text-xl max-w-2xl mx-auto">
-          Discover thousands of books through our community of readers. Borrow,
-          rent, or exchange books with fellow book lovers near you.
+          Skip the waitlists and the late fees. Discover your next favorite book, borrow it digitally in seconds, and read at your own pace.
         </h3>
         <Link
           href="/books"
