@@ -3,120 +3,168 @@
     "id": 1,
     "title": "The Silent Patient",
     "author": "Alex Michaelides",
-    "description": "A shocking psychological thriller of a woman's act of violence against her husband.",
+    "description": "A shocking psychological thriller of a woman's act of violence against her husband, and of the therapist obsessed with uncovering her hidden motive.",
     "category": "Story",
     "available_quantity": 15,
     "image_url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80",
-    "featured": true
+    "featured": true,
+    "ratings": {
+      "average": 4.5,
+      "count": 120
+    }
   },
   {
     "id": 2,
     "title": "Clean Code",
     "author": "Robert C. Martin",
-    "description": "A handbook of agile software craftsmanship for writing robust, maintainable code.",
+    "description": "A handbook of agile software craftsmanship for writing robust, maintainable code. It provides practical advice on naming, refactoring, and structuring functions.",
     "category": "Tech",
     "available_quantity": 8,
     "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
-    "featured": true
+    "featured": true,
+    "ratings": {
+      "average": 4.8,
+      "count": 340
+    }
   },
   {
     "id": 3,
     "title": "A Brief History of Time",
     "author": "Stephen Hawking",
-    "description": "A landmark volume in science writing exploring the depths of the universe.",
+    "description": "A landmark volume in science writing exploring the depths of the universe. Hawking breaks down complex concepts like black holes, time travel, and the big bang.",
     "category": "Science",
     "available_quantity": 12,
     "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
-    "featured": true
+    "featured": true,
+    "ratings": {
+      "average": 4.7,
+      "count": 850
+    }
   },
   {
     "id": 4,
     "title": "Where the Crawdads Sing",
     "author": "Delia Owens",
-    "description": "A coming-of-age murder mystery set in the quiet marshes of North Carolina.",
+    "description": "A coming-of-age murder mystery set in the quiet marshes of North Carolina. It beautifully intertwines a tale of isolation with a gripping courtroom drama.",
     "category": "Story",
     "available_quantity": 5,
     "image_url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80",
-    "featured": true
+    "featured": true,
+    "ratings": {
+      "average": 4.6,
+      "count": 920
+    }
   },
   {
     "id": 5,
     "title": "JavaScript: The Good Parts",
     "author": "Douglas Crockford",
-    "description": "Unearthing the excellence in JavaScript to create truly effective web applications.",
+    "description": "Unearthing the excellence in JavaScript to create truly effective web applications. Crockford isolates the reliable features to help developers write elegant code.",
     "category": "Tech",
     "available_quantity": 20,
     "image_url": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=600&q=80",
-    "featured": false
+    "featured": false,
+    "ratings": {
+      "average": 4.4,
+      "count": 210
+    }
   },
   {
     "id": 6,
     "title": "The Selfish Gene",
     "author": "Richard Dawkins",
-    "description": "An evolutionary perspective on genetics and the biological drive to survive.",
+    "description": "An evolutionary perspective on genetics and the biological drive to survive. Dawkins introduces the concept of memes and explains evolution from a gene-centric view.",
     "category": "Science",
     "available_quantity": 7,
     "image_url": "https://images.unsplash.com/photo-1530213786676-4189f172177f?auto=format&fit=crop&w=600&q=80",
-    "featured": false
+    "featured": false,
+    "ratings": {
+      "average": 4.6,
+      "count": 415
+    }
   },
   {
     "id": 7,
     "title": "Dune",
     "author": "Frank Herbert",
-    "description": "A sweeping science fiction epic of politics, religion, and survival on a desert planet.",
+    "description": "A sweeping science fiction epic of politics, religion, and survival on a desert planet. Paul Atreides must navigate deadly factions to control the universe's most valuable resource.",
     "category": "Story",
     "available_quantity": 18,
     "image_url": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&w=600&q=80",
-    "featured": false
+    "featured": false,
+    "ratings": {
+      "average": 4.8,
+      "count": 1100
+    }
   },
   {
     "id": 8,
     "title": "You Don't Know JS",
     "author": "Kyle Simpson",
-    "description": "A deep dive into the core mechanisms of the JavaScript language.",
+    "description": "A deep dive into the core mechanisms of the JavaScript language. This foundational guide covers scopes, closures, and the intricacies of the JS engine.",
     "category": "Tech",
     "available_quantity": 3,
     "image_url": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=600&q=80",
-    "featured": false
+    "featured": false,
+    "ratings": {
+      "average": 4.7,
+      "count": 300
+    }
   },
   {
     "id": 9,
     "title": "Cosmos",
     "author": "Carl Sagan",
-    "description": "A journey through space and time, exploring our place in the universe.",
+    "description": "A journey through space and time, exploring our place in the universe. Sagan eloquently connects the history of scientific discovery with the vastness of the cosmos.",
     "category": "Science",
     "available_quantity": 25,
     "image_url": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=600&q=80",
-    "featured": false
+    "featured": false,
+    "ratings": {
+      "average": 4.9,
+      "count": 670
+    }
   },
   {
     "id": 10,
     "title": "The Alchemist",
     "author": "Paulo Coelho",
-    "description": "A philosophical tale about a young shepherd's journey to find his personal legend.",
+    "description": "A philosophical tale about a young shepherd's journey to find his personal legend. It teaches readers about listening to their hearts and recognizing opportunity.",
     "category": "Story",
     "available_quantity": 30,
     "image_url": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=600&q=80",
-    "featured": false
+    "featured": false,
+    "ratings": {
+      "average": 4.5,
+      "count": 1500
+    }
   },
   {
     "id": 11,
     "title": "Design Patterns",
     "author": "Erich Gamma",
-    "description": "Elements of reusable object-oriented software.",
+    "description": "Elements of reusable object-oriented software. The 'Gang of Four' provide solutions to common software design problems using tested patterns.",
     "category": "Tech",
     "available_quantity": 6,
     "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80",
-    "featured": false
+    "featured": false,
+    "ratings": {
+      "average": 4.6,
+      "count": 540
+    }
   },
   {
     "id": 12,
     "title": "Sapiens",
     "author": "Yuval Noah Harari",
-    "description": "A brief history of humankind, exploring how biology and history have defined us.",
+    "description": "A brief history of humankind, exploring how biology and history have defined us. Harari covers the cognitive, agricultural, and scientific revolutions that shaped modern humans.",
     "category": "Science",
     "available_quantity": 11,
     "image_url": "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80",
-    "featured": false
+    "featured": false,
+    "ratings": {
+      "average": 4.8,
+      "count": 1300
+    }
   }
 ]

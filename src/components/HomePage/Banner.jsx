@@ -9,8 +9,8 @@ const Banner = () => {
     >
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative z-10 text-center space-y-3 text-base-100 px-4">
-        <h1 className="text-5xl font-bold">Read More, Spend Less</h1>
-        <h3 className="text-xl max-w-2xl mx-auto">
+        <h1 className="text-3xl lg:text-5xl font-bold">Read More, Spend Less</h1>
+        <h3 className="text-lg lg:text-xl max-w-2xl mx-auto">
           Discover thousands of books through our community of readers. Borrow,
           rent, or exchange books with fellow book lovers near you.
         </h3>
