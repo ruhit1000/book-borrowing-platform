@@ -6,7 +6,7 @@ const Greetings = () => {
   const { data: session } = authClient.useSession();
 
   if (session) {
-    return <h2 className="mr-4">Welcome, {session.user.name}!</h2>;
+    return <h2 className="mr-4 font-medium">Welcome, {session.user.name.split(" ")[0]}!</h2>;
   } else {
     return null;
   }
