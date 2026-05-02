@@ -3,6 +3,7 @@ import allBooks from "@/data/booksData.json";
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaStar } from 'react-icons/fa';
+import BorrowButton from '@/components/ui/BorrowButton';
 
 const BookDetailsPage = async ({ params }) => {
     const { id } = await params;
@@ -72,12 +73,7 @@ const BookDetailsPage = async ({ params }) => {
                                     <p className="font-semibold text-lg text-error">Out of Stock</p>
                                 )}
                             </div>
-                            <button 
-                                className="btn btn-neutral btn-lg w-full sm:w-auto px-10 shadow-lg"
-                                disabled={book.available_quantity === 0}
-                            >
-                                {book.available_quantity === 0 ? "Join Waitlist" : "Borrow Now"}
-                            </button>
+                            <BorrowButton book={book} size={'large'} />
                         </div>
                     </div>
 
@@ -89,7 +85,7 @@ const BookDetailsPage = async ({ params }) => {
                     <p className="text-gray-500 text-lg mb-8 max-w-md">
                         The book you're looking for doesn't exist or may have been removed from our library.
                     </p>
-                    <Link href="/books" className="btn btn-primary rounded-full px-8">
+                    <Link href="/books" className="btn btn-neutral rounded-full px-8">
                         Browse Library
                     </Link>
                 </div>

@@ -31,7 +31,6 @@ const RegisterPage = () => {
 
     if (error) {
       toast.error(error.message || "Registration failed. Please try again.");
-      return;
     } else {
       toast.success("Registration successful! Please log in.");
       setTimeout(() => {

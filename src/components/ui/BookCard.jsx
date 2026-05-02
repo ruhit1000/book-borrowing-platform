@@ -27,8 +27,8 @@ const BookCard = ({ book }) => {
             </p>
           </div>
         </div>
-        <div className="mt-6 flex gap-2">
-          <BorrowButton />
+        <div className="mt-6 grid grid-cols-2 gap-2">
+          <BorrowButton book={book} size={'small'} />
           <ViewDetailsButton book={book} />
         </div>
       </div>
