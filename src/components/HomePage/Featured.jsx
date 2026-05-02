@@ -14,7 +14,7 @@ const Featured = () => {
         </p>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 place-items-center">
         {
-            featuredBooks.map((book) => (
+            featuredBooks.slice(0, 4).map((book) => (
                 <BookCard key={book.id} book={book}/>
             ))
         }

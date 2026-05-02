@@ -166,5 +166,187 @@
       "average": 4.8,
       "count": 1300
     }
+  },
+  {
+    "id": 13,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "An easy and proven way to build good habits and break bad ones. Clear offers a practical framework for improving every day through small, incremental changes.",
+    "category": "Self-Help",
+    "available_quantity": 42,
+    "image_url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "ratings": {
+      "average": 4.9,
+      "count": 2100
+    }
+  },
+  {
+    "id": 14,
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "description": "A groundbreaking tour of the mind, explaining the two systems that drive the way we think: System 1 is fast and emotional; System 2 is slower and logical.",
+    "category": "Psychology",
+    "available_quantity": 14,
+    "image_url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "ratings": {
+      "average": 4.6,
+      "count": 890
+    }
+  },
+  {
+    "id": 15,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "description": "A classic programming book that focuses on the core process of software development independent of any particular language, emphasizing best practices and career development.",
+    "category": "Tech",
+    "available_quantity": 9,
+    "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "ratings": {
+      "average": 4.8,
+      "count": 650
+    }
+  },
+  {
+    "id": 16,
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian social science fiction novel and cautionary tale about the dangers of totalitarianism, mass surveillance, and repressive regimentation of persons and behaviours within society.",
+    "category": "Story",
+    "available_quantity": 22,
+    "image_url": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "ratings": {
+      "average": 4.7,
+      "count": 3200
+    }
+  },
+  {
+    "id": 17,
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "description": "How today's entrepreneurs use continuous innovation to create radically successful businesses. It provides a scientific approach to creating and managing startups.",
+    "category": "Business",
+    "available_quantity": 17,
+    "image_url": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "ratings": {
+      "average": 4.5,
+      "count": 780
+    }
+  },
+  {
+    "id": 18,
+    "title": "Astrophysics for People in a Hurry",
+    "author": "Neil deGrasse Tyson",
+    "description": "A clear and concise introduction to the universe, covering complex topics like quantum mechanics, black holes, and the search for extraterrestrial life in easily digestible chapters.",
+    "category": "Science",
+    "available_quantity": 28,
+    "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "ratings": {
+      "average": 4.6,
+      "count": 550
+    }
+  },
+  {
+    "id": 19,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A novel about the serious issues of rape and racial inequality told through the eyes of young Scout Finch in the Deep South.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "ratings": {
+      "average": 4.9,
+      "count": 4500
+    }
+  },
+  {
+    "id": 20,
+    "title": "Grit",
+    "author": "Angela Duckworth",
+    "description": "The power of passion and perseverance. Duckworth shows anyone striving to succeed that the secret to outstanding achievement is not talent, but a special blend of passion and persistence.",
+    "category": "Psychology",
+    "available_quantity": 16,
+    "image_url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "ratings": {
+      "average": 4.6,
+      "count": 420
+    }
+  },
+  {
+    "id": 21,
+    "title": "Cracking the Coding Interview",
+    "author": "Gayle Laakmann McDowell",
+    "description": "189 programming questions and solutions. A comprehensive guide to software engineering interviews, covering data structures, algorithms, and system design.",
+    "category": "Tech",
+    "available_quantity": 4,
+    "image_url": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "ratings": {
+      "average": 4.7,
+      "count": 1250
+    }
+  },
+  {
+    "id": 22,
+    "title": "Good to Great",
+    "author": "Jim Collins",
+    "description": "Why some companies make the leap... and others don't. Collins details the findings of a five-year study to uncover the key determinants of greatness in business.",
+    "category": "Business",
+    "available_quantity": 11,
+    "image_url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "ratings": {
+      "average": 4.5,
+      "count": 600
+    }
+  },
+  {
+    "id": 23,
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "description": "Why we do what we do in life and business. An exploration of the science behind habit creation and reformation.",
+    "category": "Self-Help",
+    "available_quantity": 19,
+    "image_url": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "ratings": {
+      "average": 4.6,
+      "count": 810
+    }
+  },
+  {
+    "id": 24,
+    "title": "The Immortal Life of Henrietta Lacks",
+    "author": "Rebecca Skloot",
+    "description": "The story of a poor Southern tobacco farmer whose cells—taken without her knowledge in 1951—became one of the most important tools in medicine.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=600&q=80",
+    "featured": false,
+    "ratings": {
+      "average": 4.7,
+      "count": 530
+    }
+  },
+  {
+    "id": 25,
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "description": "The exclusive biography of the driven, creative, and sometimes abrasive co-founder of Apple, based on more than forty interviews with Jobs himself.",
+    "category": "Biography",
+    "available_quantity": 13,
+    "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80",
+    "featured": true,
+    "ratings": {
+      "average": 4.8,
+      "count": 1400
+    }
   }
 ]

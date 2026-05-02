@@ -14,7 +14,7 @@ const Category = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 my-8 place-items-center">
         {allCategories.map((category, index) => (
           <Link
-            href={`/categories/${category.toLowerCase()}`}
+            href={"/books"}
             key={index}
             className="border-2 border-base-300 rounded-2xl py-8 w-full"
           >
