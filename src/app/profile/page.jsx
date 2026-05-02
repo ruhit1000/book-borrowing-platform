@@ -23,13 +23,16 @@ const ProfilePage = () => {
     } else {
         toast.success("Profile updated successfully!");
         document.getElementById("update_user_form").close()
+        setTimeout(() => {
+            window.location.reload();
+        }, 1500);
     }
   };
 
   if (isPending) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-base-200">
-        <span className="loading loading-spinner loading-lg text-primary"></span>
+        <span className="loading loading-spinner loading-lg text-neutral"></span>
       </div>
     );
   }
@@ -47,7 +50,7 @@ const ProfilePage = () => {
           {/* Avatar */}
           <div className="avatar mb-2">
             <div className="w-24 rounded-full ring ring-neutral ring-offset-base-100 ring-offset-2">
-              <Image src={avatarSrc} alt={user.name} width={96} height={96} />
+              <Image src={avatarSrc} alt={user.name} width={96} height={96} loading="eager" />
             </div>
           </div>
           {/* User Info */}

@@ -44,6 +44,7 @@ const Navbar = () => {
             width={120}
             height={50}
             className="mr-2 w-auto h-auto"
+            loading="eager"
           />
         </Link>
       </div>
