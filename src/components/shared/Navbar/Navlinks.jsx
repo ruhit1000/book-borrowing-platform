@@ -15,7 +15,11 @@ const Navlinks = () => {
     <>
       {links.map((link) => (
         <li key={link.id}>
-          <Link className={pathname === link.path ? "border-b-2 border-neutral" : "font-normal"} href={link.path}>
+          <Link 
+          className={pathname === link.path ? "border-b-2 border-neutral" : "font-normal"} 
+          href={link.path}
+          // prefetch={false}
+          >
             {link.name}
           </Link>
         </li>
