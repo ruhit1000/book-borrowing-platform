@@ -1,6 +1,7 @@
 import React from "react";
 import allBooks from "@/data/booksData.json";
 import Link from "next/link";
+import 'animate.css';
 
 const Category = () => {
   const allCategories = [...new Set(allBooks.map((book) => book.category))];
@@ -16,7 +17,7 @@ const Category = () => {
           <Link
             href={"/books"}
             key={index}
-            className="border-2 border-base-300 rounded-2xl py-8 w-full"
+            className="border-2 border-base-300 rounded-2xl py-8 w-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-neutral cursor-pointer"
           >
             <h4 className="text-xl font-semibold">{category}</h4>
             <p className="text-sm opacity-70">{allBooks.filter((book) => book.category === category).length} books</p>
