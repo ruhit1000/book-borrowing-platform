@@ -13,19 +13,19 @@ const ProfilePage = () => {
     const formData = new FormData(e.target);
     const { name, image } = Object.fromEntries(formData.entries());
 
-    const {data, error} = await authClient.updateUser({
-        image: image || null,
-        name: name || null,
+    const { data, error } = await authClient.updateUser({
+      image: image || null,
+      name: name || null,
     });
 
     if (error) {
-        toast.error("Failed to update profile. Please try again.");
+      toast.error("Failed to update profile. Please try again.");
     } else {
-        toast.success("Profile updated successfully!");
-        document.getElementById("update_user_form").close()
-        setTimeout(() => {
-            window.location.reload();
-        }, 1500);
+      toast.success("Profile updated successfully!");
+      document.getElementById("update_user_form").close();
+      setTimeout(() => {
+        window.location.reload();
+      }, 1500);
     }
   };
 
@@ -37,11 +37,17 @@ const ProfilePage = () => {
     );
   }
 
+  if(!session) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-base-200">
+        <p className="text-neutral text-lg">You need to be logged in to view this page.</p>
+      </div>
+    );
+  }
+
   const { user } = session;
 
-  const avatarSrc = user.image?.startsWith("http")
-    ? user.image
-    : `https://ui-avatars.com/api/?name=${encodeURIComponent(user.name)}&background=random`;
+  const avatarSrc = user.image?.startsWith("http") ? user.image : null;
 
   return (
     <div className="min-h-screen bg-base-200 flex items-center justify-center p-4">
@@ -49,9 +55,23 @@ const ProfilePage = () => {
         <div className="card-body items-center text-center pt-10">
           {/* Avatar */}
           <div className="avatar mb-2">
-            <div className="w-24 rounded-full ring ring-neutral ring-offset-base-100 ring-offset-2">
-              <Image src={avatarSrc} alt={user.name} width={96} height={96} loading="eager" />
-            </div>
+            {avatarSrc ? (
+              <div className="w-24 rounded-full ring ring-neutral ring-offset-base-100 ring-offset-2">
+                <Image
+                  src={avatarSrc}
+                  alt={user.name}
+                  width={96}
+                  height={96}
+                  loading="eager"
+                />
+              </div>
+            ) : (
+              <div className="avatar avatar-online avatar-placeholder">
+                <div className="bg-neutral text-neutral-content w-24 rounded-full">
+                  <span className="text-4xl">{user.name.charAt(0)}</span>
+                </div>
+              </div>
+            )}
           </div>
           {/* User Info */}
           <h2 className="card-title text-2xl font-bold text-neutral mt-2">
@@ -165,7 +185,7 @@ const ProfilePage = () => {
           </div>
         </div>
       </div>
-      <ToastContainer 
+      <ToastContainer
         position="top-center"
         autoClose={3000}
         hideProgressBar={true}

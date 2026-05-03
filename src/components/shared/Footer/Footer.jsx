@@ -1,11 +1,13 @@
 'use client';
 import React from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const Footer = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Message sent!");
+        toast.success("Message sent!");
+        e.target.reset();
     }
 
   return (
@@ -79,6 +81,11 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+          <ToastContainer 
+            position="top-center"
+            autoClose={3000}
+            hideProgressBar={true}
+          />
         </nav>
       </footer>
     </div>
