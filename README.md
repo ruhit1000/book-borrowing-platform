@@ -16,7 +16,7 @@ A seamless and modern web application designed to digitize the traditional libra
 
 ## 🛠️ Technologies & Tools Used
 - **Frontend Framework**: Next.js
-- **Styling**: Tailwind CSS, DaisyUI / HeroUI
+- **Styling**: Tailwind CSS, DaisyUI
 - **Authentication**: BetterAuth
 - **Database**: MongoDB
 - **Animations**: animate.css
