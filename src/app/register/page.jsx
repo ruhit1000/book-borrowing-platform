@@ -73,11 +73,10 @@ const RegisterPage = () => {
               </span>
             </label>
             <input
-              type="text"
+              type="url"
               name="image"
               placeholder="https://example.com/image.jpg"
               className="input input-bordered w-full focus:outline-none focus:border-neutral focus:ring-1 focus:ring-neutral"
-              required
             />
           </div>
 

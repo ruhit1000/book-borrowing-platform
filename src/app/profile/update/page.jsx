@@ -79,7 +79,7 @@ const ProfileUpdatePage = () => {
               </span>
             </label>
             <input
-              type="text"
+              type="url"
               name="image"
               placeholder="https://example.com/your-avatar.jpg"
               className="input input-bordered bg-base-50 focus:bg-base-100 w-full focus:outline-none focus:border-neutral focus:ring-1 focus:ring-neutral transition-colors"

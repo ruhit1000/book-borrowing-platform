@@ -3,11 +3,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
 import { toast, ToastContainer } from "react-toastify";
-import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
   const [isPending, setIsPending] = useState(false);
-  const router = useRouter();
 
   const handleGoogleSignIn = async () => {
     const data = await authClient.signIn.social({
@@ -33,7 +31,7 @@ const LoginPage = () => {
     } else {
       toast.success("Logged in successfully!");
       setTimeout(() => {
-        router.push("/");
+        window.location.href = "/";
       }, 1500);
     }
     setIsPending(false);
