@@ -1,41 +1,15 @@
-"use client";
-import { authClient } from "@/lib/auth-client";
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaUserEdit } from "react-icons/fa";
-import { toast, ToastContainer } from "react-toastify";
 
-const ProfilePage = () => {
-  const { data: session, isPending } = authClient.useSession();
-
-  const handleUpdateProfile = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const { name, image } = Object.fromEntries(formData.entries());
-
-    const { data, error } = await authClient.updateUser({
-      image: image || null,
-      name: name || null,
-    });
-
-    if (error) {
-      toast.error("Failed to update profile. Please try again.");
-    } else {
-      toast.success("Profile updated successfully!");
-      document.getElementById("update_user_form").close();
-      setTimeout(() => {
-        window.location.reload();
-      }, 1500);
-    }
-  };
-
-  if (isPending) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-base-200">
-        <span className="loading loading-spinner loading-lg text-neutral"></span>
-      </div>
-    );
-  }
+const ProfilePage = async () => {
+  
+  const session = await auth.api.getSession({
+    headers: await headers()
+  })
 
   if(!session) {
     return (
@@ -103,93 +77,14 @@ const ProfilePage = () => {
             </div>
           </div>
           {/* Action */}
-          <div className="card-actions w-full mt-2">
-            <button
-              className="btn btn-neutral w-full"
-              onClick={() =>
-                document.getElementById("update_user_form").showModal()
-              }
-            >
-              <FaUserEdit size={20} /> Update Profile
-            </button>
-
-            <dialog
-              id="update_user_form"
-              className="modal modal-bottom sm:modal-middle"
-            >
-              <div className="modal-box text-left">
-                <h3 className="font-bold text-xl text-neutral">
-                  Update Profile
-                </h3>
-                <p className="text-sm text-gray-500 mt-1 mb-4">
-                  Make changes to your personal information.
-                </p>
-
-                {/* Main Update Form */}
-                <form onSubmit={handleUpdateProfile}>
-                  {/* Name Field */}
-                  <div className="form-control w-full">
-                    <label className="label pb-1">
-                      <span className="label-text font-semibold text-neutral">
-                        Full Name
-                      </span>
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="John Doe"
-                      className="input input-bordered w-full focus:outline-none focus:border-neutral focus:ring-1 focus:ring-neutral"
-                      defaultValue={user?.name}
-                      required
-                    />
-                  </div>
-
-                  {/* Image URL Field */}
-                  <div className="form-control w-full mt-4">
-                    <label className="label pb-1">
-                      <span className="label-text font-semibold text-neutral">
-                        Profile Image URL
-                      </span>
-                    </label>
-                    <input
-                      type="url"
-                      name="image"
-                      placeholder="https://example.com/your-avatar.jpg"
-                      className="input input-bordered w-full focus:outline-none focus:border-neutral focus:ring-1 focus:ring-neutral"
-                      defaultValue={user?.image}
-                    />
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="modal-action mt-6 flex gap-2">
-                    <button
-                      type="button"
-                      className="btn btn-ghost"
-                      onClick={() =>
-                        document.getElementById("update_user_form").close()
-                      }
-                    >
-                      Cancel
-                    </button>
-                    <button type="submit" className="btn btn-neutral">
-                      Save Changes
-                    </button>
-                  </div>
-                </form>
-              </div>
-
-              <form method="dialog" className="modal-backdrop">
-                <button>close</button>
-              </form>
-            </dialog>
-          </div>
+          <Link
+          href={'/profile/update'}
+          className="btn btn-neutral w-full"
+          >
+           <FaUserEdit size={20} /> Update Profile
+          </Link>
         </div>
       </div>
-      <ToastContainer
-        position="top-center"
-        autoClose={3000}
-        hideProgressBar={true}
-      />
     </div>
   );
 };
