@@ -42,7 +42,7 @@ cd book-borrowing-platform
 npm install
 ```
 3. **Set up Environment Variables**:
-Create a `.env.local` file in the root directory. You must secure your configuration keys using environment variables. Add your BetterAuth secrets, MongoDB connection string, and Google OAuth credentials here.
+Create a `.env` file in the root directory. You must secure your configuration keys using environment variables. Add your BetterAuth secrets, MongoDB connection string, and Google OAuth credentials here.
 
 4. **Run the development server**:
 ```bash
